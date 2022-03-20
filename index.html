@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Playfair+Display&family=Playfair+Display+SC&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <style>
+        textarea {
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            resize: none;
+
+        }
+        fieldset{
+            border: 1px solid black;
+        }
+
+
+
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+
+
+
+        .img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .navl {
+            display: list-item;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--                start nav              -->
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navl">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">home</a>
+                    <span class="material-icons-outlined">
+                        home
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">publication</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">encsdrement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">devers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--                      end nav                     -->
+
+    <div class="container mt-5 ">
+        <div class="row  ">
+
+            <div class="col-sm-4 m ">
+<!-- profile image -->
+                <div class="  "><a href="#" title="Dismissible popover" data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        data-bs-content="Click anywhere in the document to close this popover"><img src="img/img-3.jpg"
+                            class="img img-thumbnail " alt="" srcset="" sizes="200*200"></a></div>
+                <p align="center">Lorem ipsum dolor si</p>
+<!--  -->
+                <hr>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+
+                <div class=" ">
+                    <p>
+                    </p> <textarea name="" id="" cols="30" rows="6" placeholder="votre biographie"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end col sm 8 li fliser -->
+
+    <div class="container mt-5 ">
+        <div class="row border">
+
+            <div class=" col-sm-4 d mt-3 p-3 ">
+                <textarea name="" id="" cols="30" rows="10" placeholder="contacts"></textarea>
+            </div>
+            <div class="col-sm-4 mt-3 p-3">
+                <textarea name="" id="" cols="30" rows="10" placeholder="experiences"></textarea>
+            </div>
+            <div class="col-sm-4 mt-3 p-3 ">
+                <textarea name="" id="" cols="30" rows="10" placeholder="diplomes"></textarea>
+            </div>
+
+            <!-- ta3 row mat9isch -->
+        </div>
+    </div>
+    <!--  -->
+
+
+
+    <!-- footer -->
+    <div class="col-12 mt-5 p-4 bg-dark text-white text-center">
+        <p>elhaddaji otmane dev-108</p>
+    </div>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
